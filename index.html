@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مرقاب | منصة كشف احتيال مطالبات التأمين الصحي</title>
-<meta name="description" content="مرقاب — وكيل ذكاء اصطناعي يحقق في مطالبات التأمين الصحي ويكشف الاحتيال قبل الصرف. عرض توضيحي تفاعلي.">
+<title>يقين | منصة كشف احتيال مطالبات التأمين الصحي</title>
+<meta name="description" content="يقين — وكيل ذكاء اصطناعي يحقق في مطالبات التأمين الصحي ويكشف الاحتيال قبل الصرف. عرض توضيحي تفاعلي.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
@@ -51,9 +51,9 @@
   .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px; position:relative; z-index:1;}
   a{color:inherit; text-decoration:none;}
 
-  /* reveal on scroll */
-  .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
-  .reveal.visible{opacity:1; transform:translateY(0);}
+  /* reveal on scroll — hidden only when JS is confirmed running (html.js) */
+  html.js .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
+  html.js .reveal.visible{opacity:1; transform:translateY(0);}
 
   /* ---------- NAV ---------- */
   header.nav{
@@ -456,7 +456,7 @@
   <div class="nav-inner">
     <a href="#" class="brand">
       <span class="logo">👁</span>
-      <span>مرقاب<span class="b-sub">منصة كشف احتيال المطالبات الصحية</span></span>
+      <span>يقين<span class="b-sub">منصة كشف احتيال المطالبات الصحية</span></span>
     </a>
     <nav class="nav-links">
       <a href="#problem">المشكلة</a>
@@ -474,7 +474,7 @@
   <div class="wrap hero-grid">
     <div>
       <div class="badge"><span class="pulse"></span> عين لا تنام على مطالبات التأمين الصحي</div>
-      <h1>كل مطالبة تمر على <span class="accent">مرقاب</span> قبل أن يُصرف منها ريال واحد</h1>
+      <h1>كل مطالبة تمر على <span class="accent">يقين</span> قبل أن يُصرف منها ريال واحد</h1>
       <p class="lead">
         منصة ذكاء اصطناعي تفحص 100% من مطالبات التأمين الصحي فور ورودها: نموذج إحصائي يقيّم الخطورة خلال أقل من ثانية،
         ووكيل تحقيق آلي يبني ملف الأدلة كاملاً بالعربي، والقرار النهائي يبقى دائماً بيد محققكم.
@@ -493,7 +493,7 @@
 
     <div class="monitor">
       <div class="monitor-head">
-        <span class="t"><span class="live-dot"></span> غرفة مراقبة مرقاب</span>
+        <span class="t"><span class="live-dot"></span> غرفة مراقبة يقين</span>
         <span class="env">محاكاة توضيحية</span>
       </div>
       <div class="monitor-kpis">
@@ -510,7 +510,7 @@
 <section class="alt" id="problem">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="eyebrow">لماذا مرقاب؟</div>
+      <div class="eyebrow">لماذا يقين؟</div>
       <h2>تسرّب بالمليارات في قطاع يفحص أقل من 10% من مطالباته يدوياً</h2>
       <p>الحجم تجاوز قدرة المراجعة البشرية: ملايين المطالبات سنوياً، وفرق التدقيق تكتفي بعينات — والاحتيال يعبر من الفجوة.</p>
     </div>
@@ -523,7 +523,7 @@
 
     <div style="text-align:center; margin-top:44px; margin-bottom:20px;" class="reveal">
       <h3 style="color:#fff; font-size:1.2rem; font-weight:800;">أنماط الاحتيال التي رصدتها هيئة التأمين رسمياً</h3>
-      <p style="color:var(--text-faint); font-size:.88rem;">وكل نمط منها يترك بصمة رقمية يلتقطها مرقاب</p>
+      <p style="color:var(--text-faint); font-size:.88rem;">وكل نمط منها يترك بصمة رقمية يلتقطها يقين</p>
     </div>
     <div class="fraud-patterns reveal">
       <div class="fraud-card">
@@ -552,8 +552,8 @@
         <div class="ft-sig">بصمتها: عدم اتساق دوائي-تشخيصي قابل للفحص آلياً مقابل قواعد المعرفة الدوائية</div>
       </div>
       <div class="fraud-card" style="border-color:rgba(47,184,166,.35);">
-        <div class="ft-head" style="color:var(--teal-2);">🎯 هنا يعمل مرقاب</div>
-        <p>كل هذه البصمات موجودة فعلاً في بيانات المطالبات — المشكلة أن لا أحد يفحصها كلها. مرقاب يفحص 100% من المطالبات، مطالبة مطالبة.</p>
+        <div class="ft-head" style="color:var(--teal-2);">🎯 هنا يعمل يقين</div>
+        <p>كل هذه البصمات موجودة فعلاً في بيانات المطالبات — المشكلة أن لا أحد يفحصها كلها. يقين يفحص 100% من المطالبات، مطالبة مطالبة.</p>
       </div>
     </div>
     <div class="source-line">المصادر: بيانات قطاع التأمين السعودي المعلنة لعام 2024 وأنماط الاحتيال المعلنة من هيئة التأمين. تقدير التسرّب محسوب من النسبة العالمية (3–10%) وليس إحصائية رسمية سعودية.</div>
@@ -565,7 +565,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">طبيعة عمل المنصة</div>
-      <h2>رحلة المطالبة داخل مرقاب — خطوة بخطوة</h2>
+      <h2>رحلة المطالبة داخل يقين — خطوة بخطوة</h2>
       <p>من لحظة وصول المطالبة حتى القرار النهائي: مسار واضح، قابل للتدقيق، وقابل للضبط حسب سياسة كل شركة.</p>
     </div>
 
@@ -608,7 +608,7 @@
       </div>
     </div>
     <div class="loop-note reveal">
-      🔁 <b>حلقة التعلم النشط (Active Learning):</b> كل قرار يتخذه المحقق البشري يعود للنموذج كبيانات تدريب مصنّفة — فتزداد دقة مرقاب شهراً بعد شهر، ويُبنى أصل بيانات لا يملكه أحد غير شركتكم.
+      🔁 <b>حلقة التعلم النشط (Active Learning):</b> كل قرار يتخذه المحقق البشري يعود للنموذج كبيانات تدريب مصنّفة — فتزداد دقة يقين شهراً بعد شهر، ويُبنى أصل بيانات لا يملكه أحد غير شركتكم.
     </div>
 
     <div class="layers reveal">
@@ -662,7 +662,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">نافذة تقنية</div>
-      <h2>مثال: كيف يكشف مرقاب التلاعب بالترميز الطبي؟</h2>
+      <h2>مثال: كيف يكشف يقين التلاعب بالترميز الطبي؟</h2>
       <p>كل مطالبة تحمل رمز تشخيص (ماذا لدى المريض؟) ورمز إجراء (ماذا فعل الطبيب؟) — وعدم اتساقهما من أقوى مؤشرات الاحتيال.</p>
     </div>
 
@@ -694,7 +694,7 @@
         <div class="side"><div class="lbl">التشخيص</div><code>M54.5 — ألم أسفل الظهر</code></div>
         <div class="verdict">🚩</div>
         <div class="side"><div class="lbl">الإجراء</div><code>99215 — استشارة معقدة (الأغلى)</code></div>
-        <div class="why">مزود يفوتر <strong>94% من حالات ألم الظهر البسيط</strong> بأغلى رمز، بينما متوسط أقرانه 11% — هذا نمط Upcoding يرصده مرقاب إحصائياً حتى لو بدت كل مطالبة وحدها سليمة.</div>
+        <div class="why">مزود يفوتر <strong>94% من حالات ألم الظهر البسيط</strong> بأغلى رمز، بينما متوسط أقرانه 11% — هذا نمط Upcoding يرصده يقين إحصائياً حتى لو بدت كل مطالبة وحدها سليمة.</div>
       </div>
     </div>
   </div>
@@ -705,7 +705,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">أداء الوكيل</div>
-      <h2>ماذا يعني إدخال مرقاب على عمليات شركتك؟</h2>
+      <h2>ماذا يعني إدخال يقين على عمليات شركتك؟</h2>
       <p>مؤشرات الأداء المستهدفة في تصميم المنصة — مقارنةً بواقع التدقيق اليدوي الحالي.</p>
     </div>
     <div class="kpi-grid reveal" id="kpiGrid">
@@ -743,7 +743,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">حاسبة الأثر المالي</div>
-      <h2>كم يمكن أن يسترد مرقاب لشركتك سنوياً؟</h2>
+      <h2>كم يمكن أن يسترد يقين لشركتك سنوياً؟</h2>
       <p>حرّك المؤشرات حسب حجم محفظتك — الحاسبة تقديرية لغرض النقاش الأولي.</p>
     </div>
 
@@ -783,11 +783,11 @@
           <div class="cr-v red"><span id="rLeak">75</span> <span class="unit">مليون ريال</span></div>
         </div>
         <div class="cres">
-          <div class="cr-l">💰 التوفير السنوي المتوقع مع مرقاب</div>
+          <div class="cr-l">💰 التوفير السنوي المتوقع مع يقين</div>
           <div class="cr-v green"><span id="rSave">26</span> <span class="unit">مليون ريال</span></div>
         </div>
         <div class="calc-pricing">
-          <b>نموذج تسعير بلا مخاطرة:</b> لا رسوم ترخيص مقدمة في مرحلة الـ Pilot — عمولة مرقاب نسبة من المبالغ المستردة فعلياً فقط. إن لم يوفّر لكم، لا تدفعون شيئاً.
+          <b>نموذج تسعير بلا مخاطرة:</b> لا رسوم ترخيص مقدمة في مرحلة الـ Pilot — عمولة يقين نسبة من المبالغ المستردة فعلياً فقط. إن لم يوفّر لكم، لا تدفعون شيئاً.
         </div>
         <div class="calc-note">⚠ أداة تقديرية توضيحية مبنية على النسب العالمية المنشورة — الأرقام الفعلية تُقاس خلال الـ Pilot على بياناتكم.</div>
       </div>
@@ -800,7 +800,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">عرض حي</div>
-      <h2>شاهد وكيل مرقاب يحقق أمامك الآن</h2>
+      <h2>شاهد وكيل يقين يحقق أمامك الآن</h2>
       <p>ثلاثة سيناريوهات واقعية بأنماط احتيال مختلفة — اختر وشغّل التحقيق.</p>
     </div>
 
@@ -871,7 +871,7 @@
       <h2>جاهزون لتجربة Pilot بلا مخاطرة؟</h2>
       <p>
         نعمل على بياناتكم داخل بيئتكم، ونُقاس بنتيجة واحدة: <b>الريالات المستردة فعلياً</b>.
-        إن لم يكشف مرقاب تسرّباً حقيقياً — لا تدفعون شيئاً.
+        إن لم يكشف يقين تسرّباً حقيقياً — لا تدفعون شيئاً.
       </p>
       <a href="#demo" class="btn btn-primary" style="margin-left:10px;">🔍 جرّب الوكيل الآن</a>
       <a href="#calculator" class="btn btn-ghost">احسب أثره على محفظتك</a>
@@ -881,34 +881,43 @@
 
 <footer>
   <div class="wrap">
-    <div class="f-brand">👁 مرقاب</div>
+    <div class="f-brand">👁 يقين</div>
     عرض مبدئي توضيحي لمنصة كشف احتيال مطالبات التأمين الصحي · جميع بيانات الديمو ولوحة المراقبة مصطنعة بالكامل ولا تمثل أي جهة حقيقية · الأرقام القطاعية من المصادر المعلنة لعام 2024
   </div>
 </footer>
 
 <script>
-/* ============ reveal on scroll ============ */
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+/* ============ reveal on scroll (مع تحصين: لو تعطل أي شيء يبقى المحتوى ظاهراً) ============ */
+try {
+  if ('IntersectionObserver' in window) {
+    document.documentElement.classList.add('js');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    /* شبكة أمان: مهما حصل، أظهر كل المحتوى خلال ثانيتين حتى لا يبقى أي قسم مخفياً */
+    setTimeout(function(){ document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible')); }, 2000);
+  }
+} catch (err) { document.documentElement.classList.remove('js'); }
 
 /* ============ animated KPI counters ============ */
-const cio = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    cio.unobserve(e.target);
-    const el = e.target, target = parseInt(el.dataset.target, 10);
-    if (target === 0) { el.textContent = '0'; return; }
-    const dur = 1200, t0 = performance.now();
-    (function tick(t){
-      const p = Math.min((t - t0) / dur, 1);
-      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
-      if (p < 1) requestAnimationFrame(tick);
-    })(t0);
-  });
-}, { threshold: 0.6 });
-document.querySelectorAll('.counter').forEach(el => cio.observe(el));
+try {
+  const cio = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      cio.unobserve(e.target);
+      const el = e.target, target = parseInt(el.dataset.target, 10);
+      if (target === 0) { el.textContent = '0'; return; }
+      const dur = 1200, t0 = performance.now();
+      (function tick(t){
+        const p = Math.min((t - t0) / dur, 1);
+        el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(tick);
+      })(t0);
+    });
+  }, { threshold: 0.6 });
+  document.querySelectorAll('.counter').forEach(el => cio.observe(el));
+} catch (err) { document.querySelectorAll('.counter').forEach(el => el.textContent = el.dataset.target); }
 
 /* ============ hero live monitor (simulated) ============ */
 const feedNames = ["مجمع طبي تجريبي أ", "عيادات نموذجية ب", "مستشفى افتراضي ج", "مركز تجريبي د", "مجمع وهمي هـ"];
@@ -931,7 +940,7 @@ function feedTick(){
   document.getElementById('mFlagged').textContent = flaggedCount.toLocaleString('ar-EG');
   setTimeout(feedTick, 900 + Math.random()*1600);
 }
-feedTick();
+try { feedTick(); } catch (err) {}
 
 /* ============ calculator ============ */
 function fmtRange(el){
@@ -951,8 +960,10 @@ function calc(){
   document.getElementById('rSave').textContent = Math.round(saveM).toLocaleString('ar-EG');
   ['sClaims','sFraud','sDetect'].forEach(id => fmtRange(document.getElementById(id)));
 }
-['sClaims','sFraud','sDetect'].forEach(id => document.getElementById(id).addEventListener('input', calc));
-calc();
+try {
+  ['sClaims','sFraud','sDetect'].forEach(id => document.getElementById(id).addEventListener('input', calc));
+  calc();
+} catch (err) {}
 
 /* ============ demo ============ */
 const codeMeanings = {
